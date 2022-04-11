@@ -10,11 +10,12 @@
     <div id="root"></div>
 
 
-    
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-    <script>
+    <script type="text/babel">
 
         const root = document.querySelector('#root')
 
@@ -30,14 +31,12 @@
         //     children: 'Grape'
         // }) 
 
+        const name = 'Kevin Williams'
 
-        const element = React.createElement(
-            'ul', // tag name
-            { className: 'list'}, // buat class
-            React.createElement('li', null, 'Orange'),
-            React.createElement('li', null, 'Manggo'),
-            React.createElement('li', null, 'Grape'),
-            )
+
+        const element = (
+            <img src="https://images.unsplash.com/photo-1649624566474-bf5c94b36a40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt=""/>
+        )
 
         ReactDOM.render(element, root)
 
