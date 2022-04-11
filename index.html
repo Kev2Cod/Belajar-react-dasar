@@ -19,23 +19,18 @@
 
         const root = document.querySelector('#root')
 
-        // const li1 = React.createElement('li',{
-        //     children: 'Orange'
-        // }) 
+        function Halo(props){
+            return <p>Halo <b>{props.name}</b></p>
+        }
 
-        // const li2 = React.createElement('li',{
-        //     children: 'Manggo'
-        // })
-
-        // const li3 = React.createElement('li',{
-        //     children: 'Grape'
-        // }) 
-
-        const name = 'Kevin Williams'
 
 
         const element = (
-            <img src="https://images.unsplash.com/photo-1649624566474-bf5c94b36a40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt=""/>
+            <>
+            <Halo name="Kevin"/>
+            <Halo name="Dian"/>
+            <Halo name="Fael"/>
+            </>
         )
 
         ReactDOM.render(element, root)
