@@ -1,0 +1,30 @@
+{
+  "name": "belajar-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "built": "babel src --out-dir public -w",
+    "serve": "lite-server --baseDir public",
+    "start": "yarn built & yarn serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kev2Cod/Belajar-react-dasar.git"
+  },
+  "author": "Kevin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kev2Cod/Belajar-react-dasar/issues"
+  },
+  "homepage": "https://github.com/Kev2Cod/Belajar-react-dasar#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-react": "^7.16.7"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "yarn": "^1.22.18"
+  }
+}
